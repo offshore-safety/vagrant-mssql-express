@@ -32,6 +32,11 @@ wget https://atlas.hashicorp.com/opentable/boxes/win-2008r2-standard-amd64-nocm/
 wget http://download.microsoft.com/download/0/4/B/04BE03CD-EAF3-4797-9D8D-2E08E316C998/SQLEXPRWT_x64_ENU.exe
 
 vagrant plugin install vagrant-reload
+
+# If there is an error with the installation of NOKOGIRI, manually install with
+gem install nokogiri -v '1.6.6.2'
+NOKOGIRI_USE_SYSTEM_LIBRARIES=1 vagrant plugin install vagrant-reload
+
 vagrant up
 # Get a coffee (or two) as it will take a while for it to finish provisioning
 ```
