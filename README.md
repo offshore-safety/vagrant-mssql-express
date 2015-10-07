@@ -43,7 +43,7 @@ vagrant up
 
 ### Connecting to the SQL Server instance that runs inside the VM
 
-Standard user for the RMS databases
+Standard user for the RMS and DADmin databases
 
 * Username: `nopsema`
 * Password: `nopsema`
@@ -63,5 +63,3 @@ Credentials
 
 * username: vagrant
 * password: va
-
-## More information

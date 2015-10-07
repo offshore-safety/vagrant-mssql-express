@@ -19,3 +19,6 @@ GO
 
 CREATE DATABASE rms_development
 GO
+
+CREATE DATABASE dadmin
+GO
