@@ -5,7 +5,7 @@ This is a fork of [https://github.com/fgrehm/vagrant-mssql-express](https://gith
 
 ## Requirements
 
-* Vagrant 1.6+ (tested on 1.6.3)
+* Vagrant 1.6+ (tested on 1.6.3, no greater than 1.7.2)
 * VirtualBox 4.3+ (tested on 4.3.16 on an Ubuntu host)
 * Around `12GB` of disk space (`3GB` for base box + `~9GB` for the VM)
 
