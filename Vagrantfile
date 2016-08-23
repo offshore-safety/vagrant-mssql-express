@@ -17,9 +17,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ## as per README
   # config.vm.box = "opentable/win-2008r2-standard-amd64-nocm"
 
+  config.winrm.retry_limit = 30
+  config.winrm.retry_delay = 10
+
   config.vm.box = "./virtualbox.box"
   config.vm.network "private_network", ip: "192.168.50.4"
   config.vm.network :forwarded_port, guest: 3389, host: 3389
+
 
   config.vm.provision :shell, path: "scripts/install-dot-net.ps1"
   config.vm.provision :shell, path: "scripts/install-sql-server.cmd"
