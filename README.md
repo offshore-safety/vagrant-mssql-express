@@ -37,6 +37,8 @@ vagrant plugin install vagrant-reload
 gem install nokogiri -v '1.6.6.2'
 NOKOGIRI_USE_SYSTEM_LIBRARIES=1 vagrant plugin install vagrant-reload
 
+vagrant box add opentable/win-2008r2-standard-amd64-nocm ./virtualbox.box
+
 vagrant up
 # Get a coffee (or two) as it will take a while for it to finish provisioning
 ```
