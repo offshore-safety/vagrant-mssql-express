@@ -45,7 +45,13 @@ vagrant up
 
 ### Connecting to the SQL Server instance that runs inside the VM
 
-If `vagrant ssh` doesn't work, use the script in the project root directory: `./vagrant_ssh`.
+You can SSH to into the VM which will drop you into powershell. Try `vagrant ssh` and if that doesn't work, use the script in the project root directory: `./vagrant_ssh`.
+
+Once in powershell on the VM, you can poke SQL Server using the command line tool which you can call as follows:
+
+```posh
+> sqlcmd -U $USERNAME -P $PASSWORD
+```
 
 Standard user for the RMS and DADmin databases
 
