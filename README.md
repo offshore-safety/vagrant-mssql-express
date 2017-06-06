@@ -45,6 +45,8 @@ vagrant up
 
 ### Connecting to the SQL Server instance that runs inside the VM
 
+If `vagrant ssh` doesn't work, use the script in the project root directory: `./vagrant_ssh`.
+
 Standard user for the RMS and DADmin databases
 
 * Username: `nopsema`

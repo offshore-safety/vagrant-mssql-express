@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# After upgrading macOS to Sierra (I think this was all that changed), plain
+# `vagrant ssh` stopped working
+vagrant ssh -- -oHostKeyAlgorithms=+ssh-dss
