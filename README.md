@@ -23,7 +23,7 @@ More information can be found on the [box page at Vagrant Cloud](https://vagrant
 ## Usage
 
 ```sh
-git clone https://github.com/fgrehm/vagrant-mssql-express.git
+git clone https://github.com/offshore-safety/vagrant-mssql-express.git
 cd vagrant-mssql-express
 
 # Launch the downloads in parallel because you're gonna be waiting a while!  Alternatively get a copy of the box image from someone on the team
